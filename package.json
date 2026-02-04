@@ -1,0 +1,29 @@
+{
+  "name": "agentewa2ticket",
+  "version": "1.0.0",
+  "description": "WhatsApp Agent that creates tickets via REST API and sends email confirmations",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "init-db": "node src/init-db.js",
+    "add-phone": "node test/add-phone.js",
+    "list-phones": "node test/list-phones.js",
+    "mock-api": "node test/mock-api.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "ticketing",
+    "azure",
+    "bot"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "whatsapp-web.js": "^1.23.0",
+    "qrcode-terminal": "^0.12.0",
+    "sqlite3": "^5.1.7",
+    "axios": "^1.12.0",
+    "nodemailer": "^7.0.7",
+    "dotenv": "^16.3.1"
+  }
+}

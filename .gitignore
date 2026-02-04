@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# WhatsApp session data
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Database
+*.db
+!schema.sql
+
+# Logs
+*.log
+logs/
+
+# Azure deployment
+.deployment
+deploy.sh
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
