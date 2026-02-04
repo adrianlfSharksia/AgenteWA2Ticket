@@ -11,7 +11,9 @@ CREATE TABLE IF NOT EXISTS phone_email_mapping (
 -- Index for faster lookups
 CREATE INDEX IF NOT EXISTS idx_phone_number ON phone_email_mapping(phone_number);
 
--- Example data (optional, can be removed)
-INSERT OR IGNORE INTO phone_email_mapping (phone_number, email, name) VALUES 
-    ('5215512345678', 'usuario1@example.com', 'Usuario 1'),
-    ('5215587654321', 'usuario2@example.com', 'Usuario 2');
+-- Example data for testing (REMOVE THESE LINES BEFORE PRODUCTION DEPLOYMENT)
+-- To add your own mappings, use: npm run add-phone <phone> <email> [name]
+-- Or uncomment and modify the lines below:
+-- INSERT OR IGNORE INTO phone_email_mapping (phone_number, email, name) VALUES 
+--     ('5215512345678', 'usuario1@example.com', 'Usuario 1'),
+--     ('5215587654321', 'usuario2@example.com', 'Usuario 2');

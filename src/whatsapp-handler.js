@@ -134,7 +134,7 @@ class WhatsAppHandler {
             if (emailSent) {
                 console.log('✓ Process completed successfully');
             } else {
-                console.warn('✓ Ticket created but email failed to send');
+                console.warn('⚠ Ticket created but email failed to send');
             }
 
         } catch (error) {
