@@ -1,0 +1,22 @@
+{
+  "$schema": "https://aka.ms/azure-web-app-deploy-schema",
+  "version": 1,
+  "configFiles": [
+    {
+      "file": ".env",
+      "type": "dotenv"
+    }
+  ],
+  "settings": {
+    "runtime": {
+      "type": "node",
+      "version": "18"
+    },
+    "build": {
+      "command": "npm install"
+    },
+    "startup": {
+      "command": "npm run init-db && npm start"
+    }
+  }
+}
